@@ -5,7 +5,7 @@ import Paper from '@material-ui/core/Paper';
 import { Typography } from "@material-ui/core";
 import Linus from "../components/Images/LinusFlowersBarFrancis.jpg";
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     bar: {
         borderRadius: "24px",
         paddingTop: "15px",
@@ -20,14 +20,24 @@ const useStyles = makeStyles({
         marginTop: "47px",
         marginBottom: "20px",
         backgroundColor: "#ebe9e7",
+        [theme.breakpoints.down("xs")]: {
+            marginTop: "20px",
+            marginBottom: "40px",
+           },
     },
     image: {
         width: "100%",
         borderRadius: "16px",
         marginTop: "80px",
         boxShadow: "0px 0px 8px 0px rgba(0,0,0,0.50);",
+        [theme.breakpoints.down("xs")]: {
+           marginTop: "40px",
+          },
+          [theme.breakpoints.down("md")]: {
+            marginTop: "60px",
+           },
     }
-});
+}));
 
 
 function Home() {

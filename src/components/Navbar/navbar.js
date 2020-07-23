@@ -32,7 +32,11 @@ const useStyles = makeStyles((theme) => ({
     color: "black",
     fontSize: "60px",
     [theme.breakpoints.down("md")]: {
-      fontSize: "55px",
+      fontSize: "50px",
+      marginLeft: "0px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "44px",
       marginLeft: "0px",
     },
     [theme.breakpoints.down("xs")]: {
@@ -45,9 +49,10 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   smNavbar: {
-    [theme.breakpoints.down("xs")]: {
-      justifyContent: "space-evenly",
-    },
+    // justifyContent: "space-evenly",
+    // [theme.breakpoints.down("xs")]: {
+    //   justifyContent: "space-evenly",
+    // },
   },
 }));
 
@@ -67,7 +72,7 @@ function Navigation(props) {
               ></TemporaryDrawer>
             </Grid>
           </Grid>
-          <Grid container justify="center" item xs={8}>
+          <Grid container justify="center" item xs={10} sm={8}>
             <Grid justify="center">
               <Typography
                 variant="h2"
