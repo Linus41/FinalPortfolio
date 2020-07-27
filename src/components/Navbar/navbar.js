@@ -1,7 +1,7 @@
 import React from "react";
 import { AppBar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import TemporaryDrawer from "../TempDrawer/tempdrawer";
+import TemporaryDrawer from "../TempDrawer/TempDrawer";
 import Grid from "@material-ui/core/Grid";
 import Weaving from "../Images/backgroundweaving.jpg";
 

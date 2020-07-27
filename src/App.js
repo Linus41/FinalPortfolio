@@ -10,8 +10,8 @@ import {
 import { makeStyles } from "@material-ui/core";
 import Home from "./pages/home";
 import Grid from '@material-ui/core/Grid';
-import Portfolio from "./pages/portfolio";
-import Links from "./pages/links";
+import Portfolio from "./pages/Portfolio";
+import Links from "./pages/Links";
 import Weaving from "./components/Images/backgroundweaving.jpg";
 import Footer from "./components/footer";
 
