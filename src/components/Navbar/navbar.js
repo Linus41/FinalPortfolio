@@ -1,5 +1,5 @@
 import React from "react";
-import { AppBar, Typography } from "@material-ui/core";
+import { AppBar } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 import TemporaryDrawer from "../TempDrawer/tempdrawer";
 import Grid from "@material-ui/core/Grid";
@@ -26,28 +26,6 @@ const useStyles = makeStyles((theme) => ({
       paddingTop: "15px",
     },
   },
-  // font: {
-  //   fontFamily: "Petit Formal Script, cursive",
-  //   color: "black",
-  //   fontSize: "60px",
-  //   [theme.breakpoints.down("md")]: {
-  //     fontSize: "50px",
-  //     marginLeft: "0px",
-  //   },
-  //   [theme.breakpoints.down("sm")]: {
-  //     fontSize: "44px",
-  //     marginLeft: "0px",
-  //   },
-  //   [theme.breakpoints.down("xs")]: {
-  //     fontSize: "32px",
-  //     marginLeft: "5px",
-  //     fontWeight: "600",
-  //   },
-  //   [theme.breakpoints.down("281px")]: {
-  //     fontSize: "20px",
-  //     marginLeft: "5px",
-  //   },
-  // },
 }));
 
 function Navigation(props) {
@@ -62,22 +40,6 @@ function Navigation(props) {
           <Grid item>
             <TemporaryDrawer />
           </Grid>
-
-          {/* <Grid item xs={10} sm={6}>
-            <Grid container justify="center">
-              <Typography
-                variant="h2"
-                gutterBottom
-                className={classes.font}
-              >
-                Linus Schief
-              </Typography>
-            </Grid>
-          </Grid>
-
-          <Grid item xs={1}>
-
-          </Grid> */}
         </Grid>
 
       </AppBar>
