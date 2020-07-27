@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       width: "100%",
       paddingRight: "20px",
-      paddingBottom: "30px",
+      paddingBottom: "0px",
       height: "95px",
     },
   },
