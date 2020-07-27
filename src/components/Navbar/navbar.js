@@ -11,41 +11,43 @@ const useStyles = makeStyles((theme) => ({
     borderTopLeftRadius: "18em 7em",
     borderBottomRightRadius: "7em 2em",
     borderBottomLeftRadius: "7em 2em",
-    paddingTop: "30px",
+    paddingTop: "10px",
     boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.75);",
     height: "125px",
     backgroundImage: `url(${Weaving})`,
     alignItems: "center",
     width: "80%",
+    [theme.breakpoints.down("sm")]: {
+      paddingTop: "20px",
+    },
     [theme.breakpoints.down("xs")]: {
       width: "100%",
-      paddingRight: "20px",
-      paddingBottom: "0px",
       height: "95px",
+      paddingTop: "15px",
     },
   },
-  font: {
-    fontFamily: "Petit Formal Script, cursive",
-    color: "black",
-    fontSize: "60px",
-    [theme.breakpoints.down("md")]: {
-      fontSize: "50px",
-      marginLeft: "0px",
-    },
-    [theme.breakpoints.down("sm")]: {
-      fontSize: "44px",
-      marginLeft: "0px",
-    },
-    [theme.breakpoints.down("xs")]: {
-      fontSize: "32px",
-      marginLeft: "5px",
-      fontWeight: "600",
-    },
-    [theme.breakpoints.down("281px")]: {
-      fontSize: "20px",
-      marginLeft: "5px",
-    },
-  },
+  // font: {
+  //   fontFamily: "Petit Formal Script, cursive",
+  //   color: "black",
+  //   fontSize: "60px",
+  //   [theme.breakpoints.down("md")]: {
+  //     fontSize: "50px",
+  //     marginLeft: "0px",
+  //   },
+  //   [theme.breakpoints.down("sm")]: {
+  //     fontSize: "44px",
+  //     marginLeft: "0px",
+  //   },
+  //   [theme.breakpoints.down("xs")]: {
+  //     fontSize: "32px",
+  //     marginLeft: "5px",
+  //     fontWeight: "600",
+  //   },
+  //   [theme.breakpoints.down("281px")]: {
+  //     fontSize: "20px",
+  //     marginLeft: "5px",
+  //   },
+  // },
 }));
 
 function Navigation(props) {
@@ -57,11 +59,11 @@ function Navigation(props) {
       <AppBar position="static" className={classes.bar}>
 
         <Grid container direction="row" alignItems="center" justify="center">
-          <Grid item xs={1}>
+          <Grid item>
             <TemporaryDrawer />
           </Grid>
 
-          <Grid item xs={10} sm={8}>
+          {/* <Grid item xs={10} sm={6}>
             <Grid container justify="center">
               <Typography
                 variant="h2"
@@ -73,9 +75,9 @@ function Navigation(props) {
             </Grid>
           </Grid>
 
-          <Grid item md={1}>
+          <Grid item xs={1}>
 
-          </Grid>
+          </Grid> */}
         </Grid>
 
       </AppBar>

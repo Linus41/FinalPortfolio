@@ -12,8 +12,9 @@ import MenuIcon from "@material-ui/icons/Menu";
 import { Link } from "react-router-dom";
 import Brightness1Icon from '@material-ui/icons/Brightness1';
 import LinkIcon from '@material-ui/icons/Link';
+import { Typography } from '@material-ui/core';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
     list: {
         width: 300,
     },
@@ -34,8 +35,22 @@ const useStyles = makeStyles({
     },
     linksColor: {
         color: "#FFCCCC",
-    }
-});
+    },
+    font: {
+        fontFamily: "Petit Formal Script, cursive",
+        color: "black",
+        fontSize: "60px",
+        [theme.breakpoints.down("md")]: {
+          fontSize: "60px",
+        },
+        [theme.breakpoints.down("sm")]: {
+          fontSize: "50px",
+        },
+        [theme.breakpoints.down("xs")]: {
+          fontSize: "36px",
+        },
+    },
+}));
 
 export default function TemporaryDrawer(props) {
     const classes = useStyles();
@@ -98,7 +113,8 @@ export default function TemporaryDrawer(props) {
         {["left"].map((anchor) => (
           <React.Fragment key={anchor}>
             <IconButton onClick={toggleDrawer(anchor, true)}>
-              <MenuIcon className={classes.font} />
+                <Typography className={classes.font}>Linus Schief</Typography>
+              {/* <MenuIcon className={classes.font} /> */}
             </IconButton>
             <Drawer
               anchor={anchor}
