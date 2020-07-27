@@ -49,6 +49,11 @@ const useStyles = makeStyles((theme) => ({
           fontSize: "36px",
         },
     },
+    hover: {
+        "& .MuiButtonBase-root": {
+            backgroundColor: "red",
+        },
+    },
 }));
 
 export default function TemporaryDrawer(props) {
@@ -111,9 +116,8 @@ export default function TemporaryDrawer(props) {
         <div>
         {["left"].map((anchor) => (
           <React.Fragment key={anchor}>
-            <IconButton onClick={toggleDrawer(anchor, true)}>
+            <IconButton className={classes.hover} onClick={toggleDrawer(anchor, true)}>
                 <Typography className={classes.font}>Linus Schief</Typography>
-              {/* <MenuIcon className={classes.font} /> */}
             </IconButton>
             <Drawer
               anchor={anchor}
