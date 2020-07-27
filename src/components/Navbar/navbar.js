@@ -40,8 +40,9 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: "0px",
     },
     [theme.breakpoints.down("xs")]: {
-      fontSize: "28px",
+      fontSize: "32px",
       marginLeft: "5px",
+      fontWeight: "600",
     },
     [theme.breakpoints.down("281px")]: {
       fontSize: "20px",
