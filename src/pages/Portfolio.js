@@ -11,7 +11,7 @@ import Friends from "../components/Images/FriendDirectory.png";
 import Turkey from "../components/Images/Turkey.jpg";
 import Robe from "../components/Images/GraduationRobeInSnowSquare.jpg";
 import Album from "../components/Images/AngeloSpencerAlbumCoverSquare.jpg";
-import AnalogProject from "../components/Project/AnalogProject";
+import AnalogProject from "../components/Project/analog-project";
 
 const useStyles = makeStyles((theme) => ({
    

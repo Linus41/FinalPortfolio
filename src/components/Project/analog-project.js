@@ -2,10 +2,9 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from '@material-ui/core/Grid';
 import Card from "@material-ui/core/Card";
-import CardHeader from "@material-ui/core/CardHeader";
 import CardContent from "@material-ui/core/CardContent";
 import Link from '@material-ui/core/Link';
-import MouseOverPopover from "../MouseOverPopover";
+import MouseOverPopover from "../mouse-over-popover";
 
 function AnalogProject(props) {
     const useStyles = makeStyles((theme) => ({
@@ -52,7 +51,7 @@ function AnalogProject(props) {
                     description={props.description}>
                 </MouseOverPopover>
                 <CardContent>
-                    <img src={props.name} className={classes.image} />
+                    <img src={props.name} alt="project" className={classes.image} />
                     <Grid container justify="center" xs={12}>
                         <Grid justify="center">
                             <Link

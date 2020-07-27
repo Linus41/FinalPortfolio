@@ -22,7 +22,7 @@ function Footer2() {
 
   return (
     <>
-      <Grid className={classes.bar} container xs={12} alignItems="center" justify="center" direction="row">
+      <Grid className={classes.bar} container alignItems="center" justify="center" direction="row">
         <Grid item>
           <Typography>
           Copyright © Linus Schief 2020

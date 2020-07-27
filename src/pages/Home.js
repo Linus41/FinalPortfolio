@@ -46,11 +46,11 @@ function Home() {
         <div>
             <Grid container direction="row" justify="center" spacing={3}>
                 <Grid item xs={12} md={4} sm={8} lg={4}>
-                    <img className={classes.image} src={Linus} />
+                    <img className={classes.image} alt="linus-portrait" src={Linus} />
                 </Grid>
                 <Grid item xs={12} md={8} sm={12} lg={8}>
                     <Paper elevation={3} className={classes.paper}>
-                        <Typography paragraph="true" variant="body2" className={classes.font}>
+                        <Typography paragraph={true} variant="body2" className={classes.font}>
                             My name is Linus Schief, and I'm a lifelong maker, artist, designer, and weirdo! My creative and professional background is varied. From playing drums in a world-touring band to starting my own textile design company in a yurt, I have always been inventive and resourceful with whatever tools I have available. That used to look like physical tools and materials like woodworking chisels, a sewing machine, a screen and some ink, a weaving loom...but these days it is shifting into the digital realm with skills like computer programming, digital illustration, and web design.
 <br></br><br></br>
 One of my best qualities, both creatively and professionally, is that I understand how to weave a variety of things together to create something fresh yet relatable. When I have an idea I see it through, rolling with the obstacles and seeing them as learning opportunities. 

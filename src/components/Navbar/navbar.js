@@ -1,7 +1,7 @@
 import React from "react";
 import { AppBar, Typography } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
-import TemporaryDrawer from "../TempDrawer/TempDrawer";
+import TemporaryDrawer from "../TempDrawer/tempdrawer";
 import Grid from "@material-ui/core/Grid";
 import Weaving from "../Images/backgroundweaving.jpg";
 
@@ -23,9 +23,6 @@ const useStyles = makeStyles((theme) => ({
       paddingBottom: "0px",
       height: "95px",
     },
-  },
-  color: {
-    backgroundColor: "black",
   },
   font: {
     fontFamily: "Petit Formal Script, cursive",
@@ -49,12 +46,6 @@ const useStyles = makeStyles((theme) => ({
       marginLeft: "5px",
     },
   },
-  smNavbar: {
-    // justifyContent: "space-evenly",
-    // [theme.breakpoints.down("xs")]: {
-    //   justifyContent: "space-evenly",
-    // },
-  },
 }));
 
 function Navigation(props) {
@@ -63,18 +54,15 @@ function Navigation(props) {
 
   return (
     <>
-      <AppBar className={classes.color} position="static" className={classes.bar}>
+      <AppBar position="static" className={classes.bar}>
 
-        <Grid container direction="row" xs={12} alignItems="center" justify="center" className={classes.smNavbar}>
-          <Grid container direction="row" alignItems="center" xs={1}>
-            <Grid >
-              <TemporaryDrawer
-
-              ></TemporaryDrawer>
-            </Grid>
+        <Grid container direction="row" alignItems="center" justify="center">
+          <Grid item xs={1}>
+            <TemporaryDrawer />
           </Grid>
-          <Grid container justify="center" item xs={10} sm={8}>
-            <Grid justify="center">
+
+          <Grid item xs={10} sm={8}>
+            <Grid container justify="center">
               <Typography
                 variant="h2"
                 gutterBottom
@@ -84,7 +72,8 @@ function Navigation(props) {
               </Typography>
             </Grid>
           </Grid>
-          <Grid item md={1} xs={0}>
+
+          <Grid item md={1}>
 
           </Grid>
         </Grid>

@@ -4,10 +4,7 @@ import Grid from '@material-ui/core/Grid';
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import Link from '@material-ui/core/Link';
-import MouseOverPopover from "../MouseOverPopover";
-import Modal from '@material-ui/core/Modal';
-import Typography from "@material-ui/core/Typography";
-
+import MouseOverPopover from "../mouse-over-popover";
 
 function Project(props) {
     const useStyles = makeStyles((theme) => ({
@@ -45,7 +42,7 @@ function Project(props) {
                             description={props.description}>
                         </MouseOverPopover>                          
                 <CardContent>
-                    <img src={props.name} className={classes.image} />
+                    <img src={props.name} alt="project" className={classes.image} />
                     <Grid container justify="center" xs={12}>
                         <Grid>
                             <Link

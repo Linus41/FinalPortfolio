@@ -4,7 +4,6 @@ import Popover from '@material-ui/core/Popover';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import CardHeader from "@material-ui/core/CardHeader";
-import Project from "../components/Project/project";
 
 const useStyles = makeStyles((theme) => ({
     popover: {

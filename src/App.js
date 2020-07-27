@@ -8,13 +8,12 @@ import {
   Route,
 } from "react-router-dom";
 import { makeStyles } from "@material-ui/core";
-import Home from "./pages/Home";
+import Home from "./pages/home";
 import Grid from '@material-ui/core/Grid';
-import Portfolio from "./pages/Portfolio";
-import Links from "./pages/Links";
-import Contact from "./pages/Contact";
+import Portfolio from "./pages/portfolio";
+import Links from "./pages/links";
 import Weaving from "./components/Images/backgroundweaving.jpg";
-import Footer2 from "./components/footer2";
+import Footer from "./components/footer";
 
 const useStyles = makeStyles((theme) => ({
   outline: {
@@ -44,7 +43,7 @@ function App() {
   return (
     <Router>
       <Container className={classes.outline} justify="center" maxWidth="md">
-        <Grid container direction="row" justify="center" xs={12}>
+        <Grid container direction="row" justify="center">
           <Navigation />
         </Grid>
         <Grid item xs={12}>
@@ -58,14 +57,11 @@ function App() {
             <Route exact path="/links" component={Links}>
 
             </Route>
-            <Route exact path="/contact" component={Contact}>
-
-            </Route>
           </Switch>
         </Grid>
       </Container>
       <Grid container>
-        <Footer2 />
+        <Footer />
       </Grid>
 
     </Router>
