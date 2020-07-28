@@ -114,7 +114,7 @@ export default function TemporaryDrawer(props) {
 
     return (
         <div>
-        {["left"].map((anchor) => (
+        {["top"].map((anchor) => (
           <React.Fragment key={anchor}>
             <IconButton className={classes.hover} onClick={toggleDrawer(anchor, true)}>
                 <Typography className={classes.font}>Linus Schief</Typography>
