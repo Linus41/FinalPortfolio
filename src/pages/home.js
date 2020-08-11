@@ -52,12 +52,12 @@ function Home() {
                     <Paper elevation={3} className={classes.paper}>
                         <Typography paragraph={true} variant="body2" className={classes.font}>
                             My name is Linus Schief, and I'm a lifelong maker, artist, designer, and weirdo! My creative and professional background is varied. From playing drums in a world-touring band to starting my own textile design company in a yurt, I have always been inventive and resourceful with whatever tools I have available. That used to look like physical tools and materials like woodworking chisels, a sewing machine, a screen and some ink, a weaving loom...but these days it is shifting into the digital realm with skills like computer programming, digital illustration, and web design.
-<br></br><br></br>
-One of my best qualities, both creatively and professionally, is that I understand how to weave a variety of things together to create something fresh yet relatable. When I have an idea I see it through, rolling with the obstacles and seeing them as learning opportunities. 
-<br></br><br></br>
-Computer Programming is fairly new to me; I was exposed to coding in a full-time college program that combined it with loom weaving. At the time, I found coding to be incomprehensible and intimidating (not to mention male-dominated). However, a few years after graduating I found myself more and more drawn to it so I attended a full-stack bootcamp where I gained many useful skills and the confidence to pursue other digital-related things such as graphic design and digital illustration.
-<br></br><br></br>
-I've always loved design and invention, and bringing function and aesthetic together for a rich and exciting experience. My goal is to bring more material and textural elements to web design. I look forward to whatever comes next!
+                            <br></br><br></br>
+                            One of my best qualities, both creatively and professionally, is that I understand how to weave a variety of things together to create something fresh yet relatable. When I have an idea I see it through, rolling with the obstacles and seeing them as learning opportunities. 
+                            <br></br><br></br>
+                            Computer Programming is fairly new to me; I was exposed to coding in a full-time college program that combined it with loom weaving. At the time, I found coding to be incomprehensible and intimidating (not to mention male-dominated). However, a few years after graduating I found myself more and more drawn to it so I attended a full-stack bootcamp where I gained many useful skills and the confidence to pursue other digital-related things such as graphic design and digital illustration.
+                            <br></br><br></br>
+                            I've always loved design and invention, and bringing function and aesthetic together for a rich and exciting experience. My goal is to bring more material and textural elements to web design. I look forward to whatever comes next!
                         </Typography>
                     </Paper>
                 </Grid>

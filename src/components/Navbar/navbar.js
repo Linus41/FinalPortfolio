@@ -4,6 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import TemporaryDrawer from "../TempDrawer/TempDrawer";
 import Grid from "@material-ui/core/Grid";
 import Weaving from "../Images/backgroundweaving.jpg";
+import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   bar: {
@@ -26,6 +27,21 @@ const useStyles = makeStyles((theme) => ({
       paddingTop: "15px",
     },
   },
+  font: {
+    fontFamily: "Petit Formal Script, cursive",
+    color: "black",
+    fontSize: "60px",
+    marginTop: "10px",
+    [theme.breakpoints.down("md")]: {
+      fontSize: "60px",
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: "50px",
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: "36px",
+    },
+  },
 }));
 
 function Navigation(props) {
@@ -37,8 +53,17 @@ function Navigation(props) {
       <AppBar position="static" className={classes.bar}>
 
         <Grid container direction="row" alignItems="center" justify="center">
-          <Grid item>
-            <TemporaryDrawer />
+          <Grid item xs={1}>
+            <Grid container justify="center">
+              <TemporaryDrawer />
+            </Grid>
+          </Grid>
+          <Grid item xs={7}>
+            <Grid container justify="center">
+              <Typography className={classes.font}>Linus Schief</Typography>
+            </Grid>
+          </Grid>
+          <Grid item xs={1}>
           </Grid>
         </Grid>
 

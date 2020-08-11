@@ -11,7 +11,8 @@ import IconButton from "@material-ui/core/IconButton";
 import { Link } from "react-router-dom";
 import Brightness1Icon from '@material-ui/icons/Brightness1';
 import LinkIcon from '@material-ui/icons/Link';
-import { Typography } from '@material-ui/core';
+import Grid from "@material-ui/core/Grid";
+import Yolk from "../egg";
 
 const useStyles = makeStyles((theme) => ({
     list: {
@@ -22,8 +23,8 @@ const useStyles = makeStyles((theme) => ({
     },
     drawer: {
         "& .MuiPaper-root": {
-          backgroundColor: "#222222",
-          color: "#ffffff",
+            backgroundColor: "#222222",
+            color: "#ffffff",
         },
     },
     iconColor: {
@@ -40,19 +41,41 @@ const useStyles = makeStyles((theme) => ({
         color: "black",
         fontSize: "60px",
         [theme.breakpoints.down("md")]: {
-          fontSize: "60px",
+            fontSize: "60px",
         },
         [theme.breakpoints.down("sm")]: {
-          fontSize: "50px",
+            fontSize: "50px",
         },
         [theme.breakpoints.down("xs")]: {
-          fontSize: "36px",
+            fontSize: "36px",
         },
     },
     hover: {
         "& .MuiButtonBase-root": {
             backgroundColor: "red",
         },
+    },
+    linksWindow: {
+        width: "30px",
+        height: "45px",
+        boxShadow: "1px 1px 10px 10px rgba(0,0,0,.25);",
+        borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%",
+        display: "inlineBlock",
+        marginTop: "60px",
+        marginBottom: "80px",
+        padding: "20px",
+        color: "#dedede",
+        textDecoration: "none",
+        backgroundColor: "#f8f8f8"
+    },
+
+    yolk: {
+        width: "60px",
+        height: "40px",
+        backgroundColor: "#ffcc49",
+        borderRadius: "50%",
+        marginTop: "16px",
+        paddingTop: "10px",
     },
 }));
 
@@ -85,50 +108,52 @@ export default function TemporaryDrawer(props) {
             onClick={toggleDrawer(anchor, false)}
             onKeyDown={toggleDrawer(anchor, false)}
         >
-            
-                <List component="nav" aria-label="main mailbox folders">
-                   
-                        <ListItem button component={Link} to="/">
-                            <ListItemIcon className={classes.iconColor}>
-                                <HomeIcon />
-                            </ListItemIcon>
-                            <ListItemText primary="Home" />
-                        </ListItem>
-                        <ListItem button component={Link} to="/portfolio">
-                            <ListItemIcon className={classes.portfolioColor}>
-                                <Brightness1Icon />
-                            </ListItemIcon>
-                            <ListItemText primary="Portfolio" />
-                        </ListItem>
-                        <ListItem button component={Link} to="/links">
-                            <ListItemIcon className={classes.linksColor}>
-                                <LinkIcon />
-                            </ListItemIcon>
-                            <ListItemText primary="Links" />
-                        </ListItem>
-                        
-                </List>
-            
+
+            <List component="nav" aria-label="main mailbox folders">
+
+                <ListItem button component={Link} to="/">
+                    <ListItemIcon className={classes.iconColor}>
+                        <HomeIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Home" />
+                </ListItem>
+                <ListItem button component={Link} to="/portfolio">
+                    <ListItemIcon className={classes.portfolioColor}>
+                        <Brightness1Icon />
+                    </ListItemIcon>
+                    <ListItemText primary="Portfolio" />
+                </ListItem>
+                <ListItem button component={Link} to="/links">
+                    <ListItemIcon className={classes.linksColor}>
+                        <LinkIcon />
+                    </ListItemIcon>
+                    <ListItemText primary="Links" />
+                </ListItem>
+
+            </List>
+
         </div>
     );
 
     return (
         <div>
-        {["top"].map((anchor) => (
-          <React.Fragment key={anchor}>
-            <IconButton className={classes.hover} onClick={toggleDrawer(anchor, true)}>
-                <Typography className={classes.font}>Linus Schief</Typography>
-            </IconButton>
-            <Drawer
-              anchor={anchor}
-              open={state[anchor]}
-              onClose={toggleDrawer(anchor, false)}
-              className={classes.drawer}
-            >
-              {list(anchor)}
-            </Drawer>
-          </React.Fragment>
-        ))}
-      </div>
+            {["top"].map((anchor) => (
+                <React.Fragment key={anchor}>
+                    <IconButton className={classes.hover} onClick={toggleDrawer(anchor, true)}>
+                        <Grid item>
+                            <Yolk />
+                        </Grid>
+                    </IconButton>
+                    <Drawer
+                        anchor={anchor}
+                        open={state[anchor]}
+                        onClose={toggleDrawer(anchor, false)}
+                        className={classes.drawer}
+                    >
+                        {list(anchor)}
+                    </Drawer>
+                </React.Fragment>
+            ))}
+        </div>
     );
 }
