@@ -4,8 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
     linksWindow: {
-        width: "32px",
-        height: "45px",
+        width: "25px",
+        height: "37px",
         boxShadow: "1px 1px 5px 5px rgba(0,0,0,.25);",
         borderRadius: "50% 50% 50% 50% / 60% 60% 40% 40%",
         display: "inlineBlock",
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
         height: "15px",
         backgroundColor: "#ffcc49",
         borderRadius: "50%",
-        marginTop: "20px",
+        marginTop: "15px",
     },
 }));
 

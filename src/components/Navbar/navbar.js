@@ -53,7 +53,7 @@ function Navigation(props) {
       <AppBar position="static" className={classes.bar}>
 
         <Grid container direction="row" alignItems="center" justify="center">
-          <Grid item xs={1}>
+          <Grid item xs={2}>
             <Grid container justify="center">
               <TemporaryDrawer />
             </Grid>
@@ -63,7 +63,7 @@ function Navigation(props) {
               <Typography className={classes.font}>Linus Schief</Typography>
             </Grid>
           </Grid>
-          <Grid item xs={1}>
+          <Grid item xs={2}>
           </Grid>
         </Grid>
 
